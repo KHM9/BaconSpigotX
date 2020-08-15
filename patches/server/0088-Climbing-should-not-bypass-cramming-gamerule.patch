@@ -5,7 +5,7 @@ Subject: [PATCH] Climbing should not bypass cramming gamerule
 
 
 diff --git a/src/main/java/net/minecraft/server/Entity.java b/src/main/java/net/minecraft/server/Entity.java
-index 145e0a716..9b69073f9 100644
+index 92b6c0dcd..071d8f3b5 100644
 --- a/src/main/java/net/minecraft/server/Entity.java
 +++ b/src/main/java/net/minecraft/server/Entity.java
 @@ -1703,6 +1703,12 @@ public abstract class Entity implements INamableTileEntity, ICommandListener, Ke
@@ -22,7 +22,7 @@ index 145e0a716..9b69073f9 100644
      }
  
 diff --git a/src/main/java/net/minecraft/server/EntityArmorStand.java b/src/main/java/net/minecraft/server/EntityArmorStand.java
-index 7543f2cee..c3cde1568 100644
+index bc6ae2fb5..c483dce43 100644
 --- a/src/main/java/net/minecraft/server/EntityArmorStand.java
 +++ b/src/main/java/net/minecraft/server/EntityArmorStand.java
 @@ -318,7 +318,7 @@ public class EntityArmorStand extends EntityLiving {
@@ -74,7 +74,7 @@ index ee7a2fedd..c9ab80ccd 100644
      }
  
 diff --git a/src/main/java/net/minecraft/server/EntityLiving.java b/src/main/java/net/minecraft/server/EntityLiving.java
-index cb8aaceb1..e360844cc 100644
+index df214cc60..e00c2c5c6 100644
 --- a/src/main/java/net/minecraft/server/EntityLiving.java
 +++ b/src/main/java/net/minecraft/server/EntityLiving.java
 @@ -2851,7 +2851,7 @@ public abstract class EntityLiving extends Entity {
@@ -126,10 +126,10 @@ index 2172fcefb..7afdb3060 100644
  
      @Override
 diff --git a/src/main/java/net/minecraft/server/EntityPlayer.java b/src/main/java/net/minecraft/server/EntityPlayer.java
-index f483076e1..ef6ac7929 100644
+index 6a8022f01..ba8ce820f 100644
 --- a/src/main/java/net/minecraft/server/EntityPlayer.java
 +++ b/src/main/java/net/minecraft/server/EntityPlayer.java
-@@ -1805,8 +1805,8 @@ public class EntityPlayer extends EntityHuman implements ICrafting {
+@@ -1806,8 +1806,8 @@ public class EntityPlayer extends EntityHuman implements ICrafting {
      }
  
      @Override
